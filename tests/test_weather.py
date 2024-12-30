@@ -2,7 +2,7 @@ import pytest
 from app.weather import get_weather
 
 def test_get_weather():
-    result = get_weather("London")
+    result = get_weather("Eindhoven")
     
     if "error" in result:
         # Hata mesajını doğrulayın
@@ -10,4 +10,4 @@ def test_get_weather():
     else:
         # Şehir bilgisini kontrol edin
         assert "city" in result
-        assert result["city"] == "London"
+        assert result["city"] == "Eindhoven"
