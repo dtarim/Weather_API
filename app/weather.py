@@ -1,7 +1,7 @@
 import requests
 from flask import Flask, jsonify
 
-API_KEY = "2b8c60edf455db374b33ce726d1899c0"
+API_KEY = "d68bb679fcd0ac48fe0a46bebefa5df3"
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric"
 
 def get_weather(city):
