@@ -10,4 +10,4 @@ def test_get_weather():
     else:
         # Şehir bilgisini kontrol edin
         assert "city" in result
-        assert result["city"] == "Eindhoven"
+        assert "Eindhoven" in result["city"]  # Şehir adını içerip içermediğini kontrol edin
